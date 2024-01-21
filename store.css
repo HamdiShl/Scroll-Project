@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    position: absolute;
+    width: 95%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    list-style: none; /* eviter les points dans le text*/
+}
+
+ul li{
+    
+    margin-left: 30px;
+
+}
+
+ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+ul li a:hover, .home{
+    background:#fff ;
+    color: #660a49;
+    cursor: pointer;
+    
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #200016, transparent);
+}
+
+.main img{
+    position: absolute;
+    width: 100%;
+    
+}
+
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.nouvil{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+
+.content{
+    color: #fff;
+    padding: 30px;
+}
+
+.content h2{
+   
+    margin: 20px;
+    font-size: 30px;
+}
+
+.content p{
+    margin: 20px;
+}
